@@ -6,11 +6,6 @@
  *
  * Creates an Cookie Consent Popup that can be configured
  *
- *
- * ProcessWire 3.x
- * Copyright (C) 2018 by Tomas Kostadinov / Conclurer GmbH
- * Licensed under MIT
- *
  * http://conclurer.com
  * http://tomaskostadinov.com
  *
