@@ -1,19 +1,16 @@
 <?php
 
 /**
- * ProcessWire  Textformatter
- * Copyright (c) 2017 by Conclurer GmbH / Tomas Kostadinov
+ * ProcessWire  Cookie Consent Popup
+ * Copyright (c) 2019 by Conclurer GmbH / Tomas Kostadinov
  *
- * Looks for Emails and automatically obfuscates them.
+ * Creates an Cookie Consent Popup that can be configured
  *
  *
  * ProcessWire 3.x
- * Copyright (C) 2018 by Tomas Kostadinov / Conclurer GmbH
  * Licensed under MIT
  *
  * http://conclurer.com
- * http://tomaskostadinov.com
- *
  *
  *
  */
