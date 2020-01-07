@@ -1,10 +1,15 @@
 <?php
 
 /**
- * ProcessWire  Cookie Consent Popup
- * Copyright (c) 2019 by Conclurer GmbH / Tomas Kostadinov
+ * ProcessWire  Textformatter
+ * Copyright (c) 2017 by Conclurer GmbH / Tomas Kostadinov
  *
- * Creates an Cookie Consent Popup that can be configured
+ * Looks for Emails and automatically obfuscates them.
+ *
+ *
+ * ProcessWire 3.x
+ * Copyright (C) 2018 by Tomas Kostadinov / Conclurer GmbH
+ * Licensed under MIT
  *
  * http://conclurer.com
  * http://tomaskostadinov.com
@@ -64,6 +69,8 @@ class ConclurerCookieConsent extends WireData implements Module, ConfigurableMod
 	public function render() {
 		$file = new ProcessWire\TemplateFile(dirname(__FILE__) . '/templates/consent.inc.php');
 		$file->config = $this->get('config');
+		wire()->urls->set('css', 'site/modules/ConclurerCookieConsent/templates');
+		$file->url = wire()->urls->get('httpCss');
 		return $file->render();
 	}
 
