@@ -6,9 +6,11 @@
  *
  * Creates an Cookie Consent Popup that can be configured
  *
- * http://conclurer.com
- * http://tomaskostadinov.com
  *
+ * ProcessWire 3.x
+ * Licensed under MIT
+ *
+ * http://conclurer.com
  *
  *
  */
@@ -64,6 +66,8 @@ class ConclurerCookieConsent extends WireData implements Module, ConfigurableMod
 	public function render() {
 		$file = new ProcessWire\TemplateFile(dirname(__FILE__) . '/templates/consent.inc.php');
 		$file->config = $this->get('config');
+		wire()->urls->set('css', 'site/modules/ConclurerCookieConsent/templates');
+		$file->url = wire()->urls->get('httpCss');
 		return $file->render();
 	}
 
